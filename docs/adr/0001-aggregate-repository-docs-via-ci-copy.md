@@ -24,7 +24,7 @@ those pages together with cross-cutting pages, at versions that were reviewed, a
 
 ## Decision outcome
 
-Chosen option: 1.
+Chosen option: "Copy pinned `docs/` in CI with `tools/aggregate.py`".
 
 - `sources.yaml` lists each repository with `url`, `ref` and the full commit `sha`.
 - `tools/aggregate.py` fetches only `docs/` and `mkdocs.yml` at that SHA (sparse, shallow), verifies the

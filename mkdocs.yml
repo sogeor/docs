@@ -67,3 +67,24 @@ nav:
   - Decisions:
       - adr/index.md
       - "0001 Aggregate repository docs via CI copy": adr/0001-aggregate-repository-docs-via-ci-copy.md
+      - "0002 Cluster constructor": adr/0002-cluster-constructor.md
+      - "0003 Talos Linux for the management cluster": adr/0003-talos-for-mgmt.md
+      - "0004 Cluster API and autoscaling for workload clusters": adr/0004-capi-and-autoscaling-for-workload-clusters.md
+      - "0005 Topology `single` and `ha`": adr/0005-single-and-ha-topology.md
+      - "0006 Proxmox VE nested in Hyper-V at home": adr/0006-proxmox-in-hyper-v.md
+      - "0007 OpenTofu with state encryption": adr/0007-opentofu-with-state-encryption.md
+      - "0008 OpenTofu state on gitlab.com, portable": adr/0008-state-on-gitlab-com.md
+      - "0009 GitHub as the source of truth": adr/0009-github-as-source-of-truth.md
+      - "0010 GitHub-hosted runners with mesh access": adr/0010-github-hosted-runners-with-mesh.md
+      - "0011 Headscale mesh with an AmneziaWG fallback": adr/0011-headscale-mesh-with-amneziawg-fallback.md
+      - "0012 Cloudflare Tunnel for inbound traffic": adr/0012-cloudflare-tunnel-for-ingress.md
+      - "0013 Cilium with ClusterMesh": adr/0013-cilium-and-clustermesh.md
+      - "0014 GitLab in the management cluster": adr/0014-gitlab-in-mgmt.md
+      - "0015 CI authentication through OIDC to OpenBao": adr/0015-oidc-to-openbao.md
+      - "0016 Artifact signing with OpenBao Transit": adr/0016-signing-with-openbao-transit.md
+      - "0017 Harbor as the container registry": adr/0017-harbor-registry.md
+      - "0018 Backups at home and in Cloudflare R2": adr/0018-backups-home-and-r2.md
+      - "0019 Kyverno for admission control": adr/0019-kyverno-admission.md
+      - "0020 Falco and Tetragon for runtime security": adr/0020-falco-and-tetragon.md
+      - "0021 DefectDojo for vulnerability management": adr/0021-defectdojo.md
+      - "0022 International and Russian compliance tracks": adr/0022-compliance-tracks.md

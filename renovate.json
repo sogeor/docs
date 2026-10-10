@@ -29,6 +29,12 @@
       ]
     },
     {
+      "groupName": "aggregated docs",
+      "matchFileNames": [
+        "sources.yaml"
+      ]
+    },
+    {
       "groupName": "pre-commit hooks",
       "matchFileNames": [
         ".pre-commit-config.yaml"
@@ -42,6 +48,17 @@
     }
   ],
   "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^sources\\.yaml$/"
+      ],
+      "matchStrings": [
+        "url: https://github\\.com/(?<depName>\\S+)\\s+ref: (?<currentValue>\\S+)\\s+sha: (?<currentDigest>[0-9a-f]{40})"
+      ],
+      "datasourceTemplate": "git-refs",
+      "packageNameTemplate": "https://github.com/{{{depName}}}"
+    },
     {
       "customType": "regex",
       "managerFilePatterns": [

@@ -48,7 +48,18 @@ Use `--local images=../images` to preview a local checkout instead.
 
 ## Documentation
 
-The site structure, guides and reference pages are being built; see the [roadmap](ROADMAP.md).
+| Page | Contents |
+|---|---|
+| [Overview](docs/index.md) | What the platform is, where to start, repositories |
+| [Platform overview](docs/platform-overview.md) | Loops, dependency rule, reference clusters, failure model, stack |
+| [Principles](docs/principles.md) | Principles and repository conventions |
+| [Cluster constructor](docs/constructor.md) | Cluster description, distributions, OS, providers, topology, sizes, validations, node contract |
+| [Deploy everything](docs/deploy-everything.md) | End-to-end deployment path |
+| [Network](docs/network.md) | Sites, CIDRs, mesh, inbound traffic, DNS and TLS |
+| [Security](docs/security.md) | Supply chain, policies, secrets, access, detection, vulnerability management |
+| [Compliance](docs/compliance.md) | International and Russian tracks |
+| [Capacity](docs/capacity.md) | Sizing and budget |
+| [Decisions](docs/adr/index.md) | Platform ADRs |
 
 ## Versions
 

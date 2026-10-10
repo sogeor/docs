@@ -55,6 +55,15 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Platform:
+      - Overview: platform-overview.md
+      - Principles: principles.md
+      - Cluster constructor: constructor.md
+      - Deploy everything: deploy-everything.md
+      - Network: network.md
+      - Security: security.md
+      - Compliance: compliance.md
+      - Capacity: capacity.md
   - Decisions:
       - adr/index.md
       - "0001 Aggregate repository docs via CI copy": adr/0001-aggregate-repository-docs-via-ci-copy.md

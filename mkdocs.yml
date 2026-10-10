@@ -64,6 +64,22 @@ nav:
       - Security: security.md
       - Compliance: compliance.md
       - Capacity: capacity.md
+  - Operations:
+      - Runbooks:
+          - runbooks/index.md
+          - Runbook template: runbooks/template.md
+      - Incident response:
+          - runbooks/incident-response/index.md
+          - Playbook template: runbooks/incident-response/template.md
+      - Threat models:
+          - threat-models/index.md
+          - Threat model template: threat-models/template.md
+      - Postmortems:
+          - postmortems/index.md
+          - Postmortem template: postmortems/template.md
+      - Exercises:
+          - exercises/index.md
+          - Exercise template: exercises/template.md
   - Decisions:
       - adr/index.md
       - "0001 Aggregate repository docs via CI copy": adr/0001-aggregate-repository-docs-via-ci-copy.md

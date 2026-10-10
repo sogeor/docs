@@ -39,8 +39,12 @@ flowchart LR
 git clone https://github.com/sogeor/docs.git
 cd docs
 pip install --require-hashes -r .github/requirements-docs.txt
-mkdocs serve
+python tools/aggregate.py
+mkdocs serve -f mkdocs.generated.yml
 ```
+
+`tools/aggregate.py` fetches the pinned `docs/` of every repository listed in `sources.yaml`.
+Use `--local images=../images` to preview a local checkout instead.
 
 ## Documentation
 
@@ -51,6 +55,8 @@ The site structure, guides and reference pages are being built; see the [roadmap
 | Tool | Version |
 |---|---|
 | Python | 3.12 |
+| MkDocs Material | 9.7.7 |
+| PyYAML | 6.0.3 |
 | pre-commit-hooks | 6.0.0 |
 | gitleaks | 8.30.1 |
 | shellcheck | 0.11.0 |

@@ -1,0 +1,12 @@
+site/
+.cache/
+docs/repos/
+__pycache__/
+.venv/
+.env
+.env.*
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,43 @@
+name: Documentation bug
+description: Something in the documentation is wrong, outdated, unclear or broken.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report security vulnerabilities here. Use [Private Vulnerability Reporting](https://github.com/sogeor/docs/security/advisories/new).
+        Documentation of a single repository (for example `images`) is fixed in that repository; report it there.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - platform overview / principles
+        - cluster constructor
+        - deploy everything
+        - network / security / compliance / capacity
+        - ADR
+        - runbook / threat model / postmortem / exercise
+        - site build / navigation / aggregation
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: URL or path of the page (for example docs/constructor.md).
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What is wrong
+      description: What the page says, what actually happens or should be said.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant output if you followed an instruction. Remove tokens, keys and private addresses.
+      render: text

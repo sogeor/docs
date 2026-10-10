@@ -44,7 +44,7 @@ mkdocs serve -f mkdocs.generated.yml
 ```
 
 `tools/aggregate.py` fetches the pinned `docs/` of every repository listed in `sources.yaml`.
-Use `--local images=../images` to preview a local checkout instead.
+Use `--local images=../images` to preview a local checkout instead. Details: [Getting started](docs/about/getting-started.md).
 
 ## Documentation
 
@@ -65,6 +65,7 @@ Use `--local images=../images` to preview a local checkout instead.
 | [Threat models](docs/threat-models/index.md) | STRIDE models of components and flows |
 | [Postmortems](docs/postmortems/index.md) | Blameless incident reviews |
 | [Exercises](docs/exercises/index.md) | Restore drills, chaos experiments, tabletop exercises |
+| [About this repository](docs/about/index.md) | Getting started, setup, configuration, usage, operations, architecture, security, troubleshooting, reference |
 
 ## Versions
 

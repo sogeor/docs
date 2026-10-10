@@ -81,6 +81,15 @@ Use `--local images=../images` to preview a local checkout instead. Details: [Ge
 | markdownlint-cli2 | 0.23.3 |
 | actionlint | 1.7.12 |
 | zizmor | 1.30.1 |
+| lychee-action | 2.9.0 |
+| markdownlint-cli2-action | 24.2.0 |
+| actions/checkout | 7.0.1 |
+| actions/configure-pages | 6.0.0 |
+| actions/upload-pages-artifact | 5.0.0 |
+| actions/deploy-pages | 5.0.1 |
+| actions/upload-artifact | 7.0.2 |
+| github/codeql-action | 4.38.3 |
+| ossf/scorecard-action | 2.4.4 |
 
 ## Contributing
 

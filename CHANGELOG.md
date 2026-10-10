@@ -15,4 +15,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - ADR 0001: aggregate repository docs via CI copy.
 - Platform ADRs 0002–0022 (status `proposed`).
 - Runbooks, incident response, threat models, postmortems and exercises: index pages and templates.
+- Repository documentation in `docs/about/`: getting started, setup, configuration, usage, operations, architecture, security, troubleshooting, reference.
 - Cross-cutting pages: platform overview, principles, cluster constructor, deploy everything, network, security, compliance, capacity.

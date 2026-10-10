@@ -104,3 +104,16 @@ nav:
       - "0020 Falco and Tetragon for runtime security": adr/0020-falco-and-tetragon.md
       - "0021 DefectDojo for vulnerability management": adr/0021-defectdojo.md
       - "0022 International and Russian compliance tracks": adr/0022-compliance-tracks.md
+  - About:
+      - about/index.md
+      - Getting started: about/getting-started.md
+      - Repository setup: about/setup.md
+      - Configuration: about/configuration.md
+      - Usage: about/usage.md
+      - Operations: about/operations.md
+      - Architecture: about/architecture.md
+      - Security: about/security.md
+      - Troubleshooting: about/troubleshooting.md
+      - Reference:
+          - Aggregation tool: about/reference/aggregate.md
+          - Workflows: about/reference/workflows.md

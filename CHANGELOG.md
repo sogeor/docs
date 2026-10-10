@@ -14,4 +14,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Renovate: `git-refs` updates of pinned repositories in `sources.yaml`.
 - ADR 0001: aggregate repository docs via CI copy.
 - Platform ADRs 0002–0022 (status `proposed`).
+- Runbooks, incident response, threat models, postmortems and exercises: index pages and templates.
 - Cross-cutting pages: platform overview, principles, cluster constructor, deploy everything, network, security, compliance, capacity.

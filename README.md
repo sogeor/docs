@@ -60,6 +60,11 @@ Use `--local images=../images` to preview a local checkout instead.
 | [Compliance](docs/compliance.md) | International and Russian tracks |
 | [Capacity](docs/capacity.md) | Sizing and budget |
 | [Decisions](docs/adr/index.md) | Platform ADRs |
+| [Runbooks](docs/runbooks/index.md) | Cross-repository operational procedures |
+| [Incident response](docs/runbooks/incident-response/index.md) | Process, severity, playbooks |
+| [Threat models](docs/threat-models/index.md) | STRIDE models of components and flows |
+| [Postmortems](docs/postmortems/index.md) | Blameless incident reviews |
+| [Exercises](docs/exercises/index.md) | Restore drills, chaos experiments, tabletop exercises |
 
 ## Versions
 

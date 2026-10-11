@@ -18,3 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Repository documentation in `docs/about/`: getting started, setup, configuration, usage, operations, architecture, security, troubleshooting, reference.
 - Workflows: `validate` (linters, tests), `docs` (markdownlint, lychee, aggregated strict build), `pages` (GitHub Pages deployment from `master`), `scorecard`; hash-locked `requirements-lint`.
 - Cross-cutting pages: platform overview, principles, cluster constructor, deploy everything, network, security, compliance, capacity.
+
+### Changed
+
+- `docs` workflow: markdownlint, lychee and the strict build of own pages run in the reusable `docs` workflow of `sogeor/workflows` v0.1.1; the aggregated site is checked by the new `site` job. Required checks: `linters`, `tests`, `docs / docs`, `site`.

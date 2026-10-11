@@ -81,8 +81,7 @@ Use `--local images=../images` to preview a local checkout instead. Details: [Ge
 | markdownlint-cli2 | 0.23.3 |
 | actionlint | 1.7.12 |
 | zizmor | 1.30.1 |
-| lychee-action | 2.9.0 |
-| markdownlint-cli2-action | 24.2.0 |
+| sogeor/workflows (`docs`) | 0.1.1 |
 | actions/checkout | 7.0.1 |
 | actions/configure-pages | 6.0.0 |
 | actions/upload-pages-artifact | 5.0.0 |

@@ -15,34 +15,21 @@ concurrency:
 
 jobs:
   docs:
-    name: docs
+    uses: sogeor/workflows/.github/workflows/docs.yml@7d7cabb75c9c2116cb2a669d65f23609f1504660 # v0.1.1
+    with:
+      link-args: >-
+        --exclude-path docs/repos
+        --exclude '^https://github\.com/sogeor/[^/]+/(security|issues/new)'
+        --exclude '^https://sogeor\.github\.io/docs'
+        --exclude '^https?://127\.0\.0\.1'
+
+  site:
+    name: site
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-
-      - name: markdownlint
-        uses: DavidAnson/markdownlint-cli2-action@21c1be1b93ad9ed58fa840aacc3f279cde2a72ff # v24.2.0
-        with:
-          globs: |
-            *.md
-            docs/**/*.md
-            .github/**/*.md
-
-      - name: lychee
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
-        with:
-          args: >-
-            --no-progress
-            --exclude-path docs/repos
-            --exclude '^https://github\.com/sogeor/[^/]+/(security|issues/new)'
-            --exclude '^https://sogeor\.github\.io/docs'
-            --exclude '^https?://127\.0\.0\.1'
-            '*.md' 'docs/**/*.md' '.github/**/*.md'
-          fail: true
 
       - name: Install dependencies
         run: python3 -m pip install --user --quiet --require-hashes -r .github/requirements-docs.txt

@@ -32,12 +32,12 @@ recorded and every component is code.
 
 | Repository | Purpose | Status |
 |---|---|---|
-| [`.github`](https://github.com/sogeor/.github) | Organization profile, community health files | ready |
+| [`.github`](https://github.com/sogeor/.github) | Organization profile, community health files | ready (v0.3.0) |
 | [`docs`](https://github.com/sogeor/docs) | This site: cross-cutting pages, ADRs, runbooks | in progress |
 | `bootstrap` | Layer 0: hypervisor, cloud accounts, buckets, SOPS/age | planned |
-| `workflows` | Reusable GitHub Actions workflows | planned |
+| [`workflows`](https://github.com/sogeor/workflows) | Reusable GitHub Actions workflows | ready (v0.1.1) |
 | [`images`](https://github.com/sogeor/images) | VM images for every (OS, provider) pair | ready (Ubuntu 24.04 on Proxmox) |
-| `modules` | OpenTofu modules, cluster description schema, CAPI generator | planned |
+| [`modules`](https://github.com/sogeor/modules) | OpenTofu modules, cluster description schema, CAPI generator | in progress |
 | `management` | External loop: `edge`, `mgmt`, DNS, Cloudflare | planned |
 | `platform` | GitOps for all clusters | planned |
 | `ansible` | OS, distribution and hardening roles | planned |

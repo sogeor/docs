@@ -22,7 +22,7 @@ repositories:
 | `title` | string | — | yes | Section title under **Repositories** | `Images` |
 | `url` | string | — | yes | `https://github.com/<owner>/<repo>`, no trailing slash or `.git` | `https://github.com/sogeor/images` |
 | `ref` | string | — | yes | Tag or branch that `sha` belongs to; Renovate tracks it | `v1.0.0`, `master` |
-| `sha` | string | — | yes | Full 40-character commit SHA that is built | `40a8ff…48e7` |
+| `sha` | string | — | yes | Full 40-character **commit** SHA that is built; for an annotated tag use the peeled `refs/tags/<tag>^{}` line of `git ls-remote` | `40a8ff…48e7` |
 
 Validation errors stop the build with `error: sources.yaml: …`.
 

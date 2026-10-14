@@ -52,6 +52,7 @@ Use `--local images=../images` to preview a local checkout instead. Details: [Ge
 |---|---|
 | [Overview](docs/index.md) | What the platform is, where to start, repositories |
 | [Platform overview](docs/platform-overview.md) | Loops, dependency rule, reference clusters, failure model, stack |
+| [Vision and roadmap](docs/vision.md) | Long-term direction: sogeor platform as a multi-provider PaaS |
 | [Principles](docs/principles.md) | Principles and repository conventions |
 | [Cluster constructor](docs/constructor.md) | Cluster description, distributions, OS, providers, topology, sizes, validations, node contract |
 | [Deploy everything](docs/deploy-everything.md) | End-to-end deployment path |

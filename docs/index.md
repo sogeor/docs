@@ -20,6 +20,7 @@ recorded and every component is code.
 | You want to | Read |
 |---|---|
 | Understand what the platform is | [Platform overview](platform-overview.md), [Principles](principles.md) |
+| See where the platform is going | [Vision and roadmap](vision.md) |
 | Describe a cluster | [Cluster constructor](constructor.md) |
 | Deploy the platform | [Deploy everything](deploy-everything.md) |
 | Plan addresses and access | [Network](network.md) |

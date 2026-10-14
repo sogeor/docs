@@ -85,6 +85,12 @@ Check: **Settings → Pages** shows **Your site is live at `https://<owner>.gith
 1. Install the [Renovate GitHub App](https://github.com/apps/renovate) for **Only select repositories** and
    add this repository.
 2. Merge the onboarding pull request if Renovate opens one (the repository already has `renovate.json`).
+3. The configuration proposes a version only 7 days after it was published (`minimumReleaseAge`) to
+   protect against compromised or yanked releases; security updates bypass the delay. Updates whose
+   source publishes no release dates are held until the date is known.
+4. Exception: pins in `sources.yaml` (group `aggregated docs`) have no delay. They point to commits of
+   the organization's own repositories, the `git-refs` source has no release dates, and every pin
+   update is checked by the `site` build before merge.
 
 Check: an issue **Dependency Dashboard** appears and lists `aggregated docs`, `github-actions`,
 `python tools` and `pre-commit hooks`.

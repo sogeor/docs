@@ -29,7 +29,7 @@ documentation repository and its build.
 | Link rewriting points outside the repository | Build | Links leaving the repository fail the build | CWE-22 |
 | Leaked secret in a commit | Contributor → repository | gitleaks, push protection | CWE-798 |
 | Workflow injection through pull request data | Pull request → CI | No untrusted expressions in `run:`; `zizmor` | CWE-78 |
-| Tampered dependency | Registry → build | Hash-locked requirements, SHA-pinned actions, Renovate | CWE-829 |
+| Tampered dependency | Registry → build | Hash-locked requirements, SHA-pinned actions, Renovate proposes versions at least 7 days after release (`minimumReleaseAge`) | CWE-829 |
 
 Vulnerabilities are reported as described in
 [SECURITY.md](https://github.com/sogeor/docs/blob/master/SECURITY.md).

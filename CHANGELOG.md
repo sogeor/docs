@@ -24,3 +24,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `docs` workflow: markdownlint, lychee and the strict build of own pages run in the reusable `docs` workflow of `sogeor/workflows` v0.1.1; the aggregated site is checked by the new `site` job. Required checks: `linters`, `tests`, `docs / docs`, `site`.
 - Site aggregates `.github` v0.3.0; repository status table updated (`.github` v0.3.0, `workflows` v0.1.1, `modules` in progress).
 - Pinning guidance: annotated tags are pinned by the peeled commit SHA.
+- Renovate proposes versions only 7 days after release (`minimumReleaseAge`); pins of aggregated repositories in `sources.yaml` are exempt.

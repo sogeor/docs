@@ -2,7 +2,7 @@
 
 ## Update a pinned repository
 
-Renovate opens a pull request **chore(deps): update aggregated docs** that changes `sha` (and `ref` for tags)
+Renovate opens a pull request **chore(deps): update aggregated docs** right after a new commit or tag appears (no release age delay for this group); it changes `sha` (and `ref` for tags)
 in `sources.yaml`.
 
 1. Open the pull request and wait for the `docs` check.

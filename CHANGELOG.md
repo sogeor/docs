@@ -18,6 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Repository documentation in `docs/about/`: getting started, setup, configuration, usage, operations, architecture, security, troubleshooting, reference.
 - Workflows: `validate` (linters, tests), `docs` (markdownlint, lychee, aggregated strict build), `pages` (GitHub Pages deployment from `master`), `scorecard`; hash-locked `requirements-lint`.
 - Cross-cutting pages: platform overview, principles, cluster constructor, deploy everything, network, security, compliance, capacity.
+- Vision and roadmap page (`docs/vision.md`): long-term direction of sogeor platform; ADR 0023 (status `proposed`).
 
 ### Changed
 

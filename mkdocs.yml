@@ -57,6 +57,7 @@ nav:
   - Home: index.md
   - Platform:
       - Overview: platform-overview.md
+      - Vision and roadmap: vision.md
       - Principles: principles.md
       - Cluster constructor: constructor.md
       - Deploy everything: deploy-everything.md
@@ -104,6 +105,7 @@ nav:
       - "0020 Falco and Tetragon for runtime security": adr/0020-falco-and-tetragon.md
       - "0021 DefectDojo for vulnerability management": adr/0021-defectdojo.md
       - "0022 International and Russian compliance tracks": adr/0022-compliance-tracks.md
+      - "0023 Long-term direction: sogeor platform": adr/0023-long-term-direction-sogeor-platform.md
   - About:
       - about/index.md
       - Getting started: about/getting-started.md

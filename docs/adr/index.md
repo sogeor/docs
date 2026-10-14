@@ -33,3 +33,4 @@ repository are recorded in that repository.
 | [0020](0020-falco-and-tetragon.md) | Falco and Tetragon for runtime security | proposed |
 | [0021](0021-defectdojo.md) | DefectDojo for vulnerability management | proposed |
 | [0022](0022-compliance-tracks.md) | International and Russian compliance tracks | proposed |
+| [0023](0023-long-term-direction-sogeor-platform.md) | Long-term direction: sogeor platform | proposed |

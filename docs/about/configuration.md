@@ -36,7 +36,7 @@ Base site configuration. `tools/aggregate.py` writes `mkdocs.generated.yml`, whi
 
 | Key | Value | Notes |
 |---|---|---|
-| `site_url` | `https://sogeor.github.io/docs/` | Change in a fork or when a custom domain is added |
+| `site_url` | `https://docs.sogeor.com/` | Address of the published site; change it in a fork ([Custom domain](setup.md#custom-domain)) |
 | `strict` | `true` | Any warning fails the build |
 | `validation` | all `warn` | Broken links, unknown anchors, pages outside `nav` fail the strict build |
 | `theme.features` | tabs, sections, indexes, code copy | No edit button: aggregated pages belong to other repositories |

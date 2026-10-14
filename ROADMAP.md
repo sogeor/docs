@@ -10,7 +10,6 @@ Horizon: through Q4 2027. Order follows the sogeor platform plan.
 - Platform ADRs for every foundational decision.
 - "Deploy everything" guide from an empty account to a working platform, completed as repositories are released.
 - Runbooks (including incident response), threat models, postmortem and exercise templates.
-- Custom domain `docs.sogeor.com`.
 
 ## Not planned
 

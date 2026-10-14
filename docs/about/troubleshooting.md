@@ -40,6 +40,20 @@
 **Cause:** the entry does not match the expected order `url`, `ref`, `sha` on consecutive lines.
 **Fix:** keep the key order from [Configuration](configuration.md#sourcesyaml).
 
+## Custom domain returns 404 or HTTPS is unavailable
+
+| Symptom | Cause | Fix |
+|---|---|---|
+| The home page returns `404 There isn't a GitHub Pages site here`, while other pages work; the response has a large `Age` header | The CDN of GitHub Pages cached a 404 from before the first deployment | Run **Actions → pages → Run workflow** on `master`, or wait 10–20 minutes; reload with cache bypass |
+| **Enforce HTTPS** is unavailable: *domain is not properly configured to support HTTPS* | The DNS record is proxied by Cloudflare, so GitHub cannot issue the certificate | Set the record to **DNS only**, wait up to an hour, then enable **Enforce HTTPS** |
+| `sitemap.xml` and canonical links point to the old address | `site_url` in `mkdocs.yml` was not changed | Set `site_url` to the custom domain |
+
+Check the response headers:
+
+```bash
+curl -sS -o /dev/null -D - https://docs.example.com/
+```
+
 ## Pages deployment fails with `Branch "…" is not allowed to deploy to github-pages`
 
 **Cause:** the environment allows only `master`.

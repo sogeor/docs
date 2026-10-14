@@ -4,5 +4,5 @@ contact_links:
     url: https://github.com/sogeor/docs/security/advisories/new
     about: Report vulnerabilities privately, not in public issues.
   - name: Documentation site
-    url: https://sogeor.github.io/docs/
+    url: https://docs.sogeor.com/
     about: Platform overview, deployment guide, ADRs and runbooks.

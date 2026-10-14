@@ -1,6 +1,6 @@
 site_name: sogeor platform
 site_description: Documentation of the sogeor DevSecOps platform
-site_url: https://sogeor.github.io/docs/
+site_url: https://docs.sogeor.com/
 repo_url: https://github.com/sogeor/docs
 repo_name: sogeor/docs
 copyright: Copyright &copy; sogeor. Licensed under Apache-2.0.

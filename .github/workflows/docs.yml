@@ -20,7 +20,7 @@ jobs:
       link-args: >-
         --exclude-path docs/repos
         --exclude '^https://github\.com/sogeor/[^/]+/(security|issues/new)'
-        --exclude '^https://sogeor\.github\.io/docs'
+        --exclude '^https://docs\.sogeor\.com'
         --exclude '^https?://127\.0\.0\.1'
 
   site:

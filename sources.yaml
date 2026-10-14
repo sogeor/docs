@@ -1,4 +1,9 @@
 repositories:
+  - name: github
+    title: .github
+    url: https://github.com/sogeor/.github
+    ref: v0.3.0
+    sha: 3221f7e002701f096a59bba5d6bd0162b38bda83
   - name: images
     title: Images
     url: https://github.com/sogeor/images

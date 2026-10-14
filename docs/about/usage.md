@@ -30,7 +30,7 @@ Prerequisites: the repository has `docs/` (and ideally `mkdocs.yml` with `nav`),
 1. Find the commit to publish (a release tag is preferred):
 
     ```bash
-    git ls-remote https://github.com/<owner>/<repo> refs/tags/v1.0.0
+    git ls-remote https://github.com/<owner>/<repo> 'refs/tags/v1.0.0*'
     ```
 
 2. Add an entry to `sources.yaml`:
@@ -40,7 +40,7 @@ Prerequisites: the repository has `docs/` (and ideally `mkdocs.yml` with `nav`),
         title: Modules
         url: https://github.com/<owner>/modules
         ref: v1.0.0
-        sha: <40-character SHA from step 1>
+        sha: <40-character commit SHA from step 1; the ^{} line for an annotated tag>
     ```
 
 3. Run `python3 tools/aggregate.py` and `mkdocs build --strict -f mkdocs.generated.yml`.

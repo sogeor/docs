@@ -15,7 +15,7 @@ features work. Steps are in order; each ends with a check.
 | Field | Value |
 |---|---|
 | Description | `Documentation of the sogeor DevSecOps platform: overview, cluster constructor, network, security and compliance, platform ADRs, runbooks and threat models, with pinned docs of every platform repository built into one MkDocs site.` |
-| Website | `https://<owner>.github.io/docs/` (later the custom documentation domain) |
+| Website | `https://docs.sogeor.com/` (in a fork: your custom domain or `https://<owner>.github.io/docs/`) |
 | Topics | `documentation` `mkdocs` `mkdocs-material` `github-pages` `devsecops` `platform-engineering` `architecture-decision-records` `adr` `runbooks` `threat-modeling` `kubernetes` `gitops` `infrastructure-as-code` `supply-chain-security` `compliance` |
 | Include in the home page | Releases — off until the first release; Deployments — on; Packages — off |
 
@@ -76,9 +76,22 @@ Check: the **Security** tab shows **Report a vulnerability**.
 
 Check: **Settings → Pages** shows **Your site is live at `https://<owner>.github.io/docs/`**.
 
-!!! note "Custom domain"
-    A custom domain is configured later: **Settings → Pages → Custom domain**, plus a `CNAME` DNS record
-    pointing to `<owner>.github.io`, and `site_url` in `mkdocs.yml`.
+### Custom domain
+
+The reference site uses `docs.sogeor.com`. In a fork, replace `docs.example.com` with your domain.
+
+1. In your DNS provider, create a record: type `CNAME`, name `docs`, target `<owner>.github.io`.
+   In Cloudflare: **DNS → Records → Add record**, **Proxy status: DNS only** (grey cloud).
+2. **Settings → Pages → Custom domain:** `docs.example.com` → **Save**. Wait for **DNS check successful**.
+3. When the certificate is issued (up to an hour), enable **Enforce HTTPS**.
+4. Set `site_url: https://docs.example.com/` in `mkdocs.yml` and the domain in the `lychee` exclusion of
+   `.github/workflows/docs.yml`; merge the change so `pages` republishes the site.
+
+Check: `https://docs.example.com/` opens the home page, and `https://<owner>.github.io/docs/` redirects to it.
+
+!!! warning "Keep the record DNS only"
+    With the Cloudflare proxy (orange cloud) enabled, GitHub cannot issue the certificate and
+    **Enforce HTTPS** stays unavailable. See [Troubleshooting](troubleshooting.md#custom-domain-returns-404-or-https-is-unavailable).
 
 ## Renovate
 

@@ -14,7 +14,7 @@ End-to-end documentation of the sogeor DevSecOps platform and the source of its 
 - "Deploy everything": one guide from an empty account to a working platform.
 - Platform ADRs ([MADR](https://adr.github.io/madr/)), runbooks, threat models, postmortems and exercises.
 - Aggregates the `docs/` directory of every platform repository, pinned by tag and SHA.
-- Builds and publishes the site to GitHub Pages: <https://sogeor.github.io/docs/>.
+- Builds and publishes the site to GitHub Pages: <https://docs.sogeor.com/>.
 
 ## How it works
 

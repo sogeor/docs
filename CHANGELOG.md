@@ -25,3 +25,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Site aggregates `.github` v0.3.0; repository status table updated (`.github` v0.3.0, `workflows` v0.1.1, `modules` in progress).
 - Pinning guidance: annotated tags are pinned by the peeled commit SHA.
 - Renovate proposes versions only 7 days after release (`minimumReleaseAge`); pins of aggregated repositories in `sources.yaml` are exempt.
+- Site address is `https://docs.sogeor.com/` (`site_url`, README, issue template, link check exclusion); setup and troubleshooting pages describe the custom domain, DNS-only record and HTTPS.
